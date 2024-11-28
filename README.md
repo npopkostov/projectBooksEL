@@ -2,7 +2,7 @@
 
 ## **Description**
 
-Single Page Web Application that allows users to search for books by Title, Author, or Genre. The backend is created using **Node.js** and **Express**, and the frontend is created with **React** and **Tailwind CSS**, implementing the **BEM methodology** for scalable and maintainable CSS.
+Single Page Web Application that allows users to search for books by Title, Author, or Genre as well as sort them. The backend is created using **Node.js** and **Express**, and the frontend is created with **React** and **Tailwind CSS**, implementing the **BEM methodology** for scalable and maintainable CSS.
 
 ## **Technologies Used**
 
