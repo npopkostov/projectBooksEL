@@ -9,16 +9,14 @@ const BookList = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
     setBooks(homePage.sortedBooks);
     setLoading(false);
-  }, [homePage.sortedBooks]);
+  }, [homePage.change]);
 
   useEffect(() => {
     if (homePage.searchQuery && books.length > 0) {
       const regex = new RegExp(homePage.searchQuery, "i");
       const bookContentElements = document.querySelectorAll(".bookCard-info-item__content");
-
       bookContentElements.forEach((element) => {
         const originalText = element.textContent;
         const highlightedText = originalText.replace(
@@ -35,7 +33,7 @@ const BookList = () => {
         });
       }
     }
-  }, [homePage.searchQuery, books]);
+  }, [homePage.searchQuery, books, homePage.change]);
 
   return (
     <ul className="bookList">

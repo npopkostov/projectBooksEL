@@ -9,6 +9,7 @@ const AppProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [searchedResults, setSearchedResults] = useState([]);
   const [searchQuery, setSearchQuery] = useState();
+  const [change, setChange] = useState(1);
 
   useEffect(() => {
     axios.get("http://localhost:4000/data/books").then((response) => {
@@ -20,6 +21,7 @@ const AppProvider = ({ children }) => {
   }, []);
 
   useEffect(() => {
+    setChange((prev) => prev + 1);
     if (searchedResults !== false && searchedResults.length > 0) {
       switch (sortType) {
         case "author":
@@ -83,6 +85,7 @@ const AppProvider = ({ children }) => {
           setSearchedResults,
           searchQuery,
           setSearchQuery,
+          change,
         },
       }}
     >
