@@ -27,14 +27,14 @@ Single Page Web Application that allows users to search for books by Title, Auth
 2. Install Dependencies:
 
    ```bash
-   cd projectBooksEL/backend
-   npm install
+   cd projectBooksEL
+   npm run setup
    ```
 
 3. Start the server:
 
    ```bash
-   npm start
+   npm run start
    ```
 
 4. Access the Application:
