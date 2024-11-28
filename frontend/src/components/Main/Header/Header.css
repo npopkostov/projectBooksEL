@@ -1,0 +1,11 @@
+.header {
+  @apply flex flex-wrap items-center justify-between gap-2;
+}
+
+.header-sort {
+  @apply flex gap-2;
+}
+
+.header-sort__box {
+  @apply border rounded-md;
+}

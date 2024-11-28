@@ -1,0 +1,11 @@
+.search {
+  @apply flex gap-5;
+}
+
+.search__input {
+  @apply border bg-white;
+}
+
+.search__btn {
+  @apply flex items-center justify-center border px-1 rounded-md hover:bg-blue-100 hover:text-white;
+}

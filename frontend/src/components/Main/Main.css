@@ -1,0 +1,3 @@
+.main {
+  @apply flex-col items-center justify-center p-4 border shadow-lg rounded-lg  space-y-5;
+}

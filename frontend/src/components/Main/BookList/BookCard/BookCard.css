@@ -1,0 +1,27 @@
+.bookCard {
+  @apply flex flex-wrap shadow-md bg-indigo-50 p-5 items-center justify-around gap-5 border rounded-md;
+}
+
+.bookCard-img {
+  @apply h-16 w-16;
+}
+
+.bookCard-info {
+  @apply flex border border-slate-300 rounded-md shadow p-2 flex-col w-full;
+}
+
+.bookCard-info-item {
+  @apply flex flex-wrap justify-start space-x-1;
+}
+
+.bookCard-info-item__category {
+  @apply font-bold text-sm;
+}
+
+.bookCard-info-item__content {
+  @apply text-sm;
+}
+
+.bookCard-info-item__content--active {
+  @apply font-bold text-red-500;
+}
